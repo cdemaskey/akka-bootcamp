@@ -55,8 +55,4 @@ namespace ChartApp.Actors
         public IActorRef Subscriber { get; private set; }
     }
     #endregion
-
-    class ChartingMessages
-    {
-    }
 }
