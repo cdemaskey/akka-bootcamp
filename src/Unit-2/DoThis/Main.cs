@@ -35,7 +35,7 @@ namespace ChartApp
                 .WithDispatcher("akka.actor.synchronized-dispatcher"));
 
             _toggleActors[CounterType.Memory] = Program.ChartActors.ActorOf(Props.Create(() => new ButtonToggleActor(_coordinatorActor, btnMemory, CounterType.Memory, false))
-                .WithDispatcher("akka.actor.synchonized-dispatcher"));
+                .WithDispatcher("akka.actor.synchronized-dispatcher"));
 
             _toggleActors[CounterType.Disk] = Program.ChartActors.ActorOf(Props.Create(() => new ButtonToggleActor(_coordinatorActor, btnDisk, CounterType.Disk, false))
                 .WithDispatcher("akka.actor.synchronized-dispatcher"));
